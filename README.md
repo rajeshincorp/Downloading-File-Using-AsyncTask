@@ -1,5 +1,5 @@
 # Downloading-File-Using-AsyncTask
-How to download a file from the web in Android with AsyncTask
+Downloading a file from the web in Android with AsyncTask
 
 
   //Executing the AsyncTask 
