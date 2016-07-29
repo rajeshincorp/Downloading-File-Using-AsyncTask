@@ -3,6 +3,7 @@ How to download a file from the web in Android with AsyncTask
 
 
   //Showing progress bar  
+  
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
@@ -21,7 +22,8 @@ How to download a file from the web in Android with AsyncTask
     }
 
   //AsycTask to download a file
-    class DownloadFile extends AsyncTask<String, String, String> {
+        
+        class DownloadFile extends AsyncTask<String, String, String> {
 
         @Override
         protected void onPreExecute() {
