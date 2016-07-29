@@ -2,6 +2,11 @@
 How to download a file from the web in Android with AsyncTask
 
 
+  //Executing the AsyncTask 
+  
+    DownloadFile dFile = new DownloadFile();
+    dFile.execute("your url here");
+
   //Showing progress bar  
   
     @Override
@@ -79,7 +84,8 @@ How to download a file from the web in Android with AsyncTask
         @Override
         protected void onPostExecute(String file_url) {
             pDialog.dismiss();
-            //Check whether installing apps from unknown sources is enabled or not
+            
+            //Download completed
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setMessage("Download completed!");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
